@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "npcga"
+version = "0.1.0"
+description = "NASA POWER Climate & GIS Analyzer"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Mahmoud Mohamed Atia" }]
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "requests",
+]
+
+[project.optional-dependencies]
+web = ["streamlit>=1.50", "plotly>=5.24", "openpyxl"]
+gis = ["geopandas", "pyogrio", "pyproj", "rasterio"]
+dev = ["pytest", "ruff", "pymannkendall"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: tests that call the live NASA POWER API (run with: pytest -m network)"]
+addopts = "-m 'not network'"
+
+[tool.ruff]
+line-length = 100

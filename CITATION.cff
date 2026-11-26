@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "NASA POWER Climate & GIS Analyzer"
+version: 0.1.0
+date-released: 2026-11-26
+license: MIT
+authors:
+  - family-names: Atia
+    given-names: Mahmoud Mohamed
+abstract: >-
+  Open-source tool to read, check and analyse NASA POWER climate data (rainfall focus) and to
+  prepare labelled point tables for GIS workflows such as ArcGIS Pro.
+keywords:
+  - NASA POWER
+  - rainfall
+  - climate
+  - GIS
+  - ArcGIS Pro
