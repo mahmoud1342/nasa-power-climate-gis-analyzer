@@ -15,8 +15,9 @@ silently changing the meaning of existing data or methods.
 
 ## Development environment
 
-The package metadata currently supports Python 3.11+ and the CI workflow tests Python 3.11 and
-3.12. Python 3.12 is recommended for a new development environment.
+The package metadata declares Python 3.11+. The maintainer develops and tests on Python 3.12; a CI
+workflow for 3.11 and 3.12 (Windows and Ubuntu) is defined, but its results are not yet confirmed
+(see the README). Python 3.12 is recommended for a new development environment.
 
 ### Windows (PowerShell)
 
